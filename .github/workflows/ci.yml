@@ -17,7 +17,7 @@ jobs:
     steps:
     - name:
       #uses: actions/checkout@v2
-      run: date /t
+      run: "date /t"
 
   job3:
     name: Third job
