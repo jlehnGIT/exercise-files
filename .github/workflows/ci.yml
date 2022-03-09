@@ -7,27 +7,23 @@ jobs:
     #name: First job
     runs-on: ubuntu-latest
     steps:
-    - name:
-      run: date
+    - run: date
 
   job2:
     #name: Second job
     runs-on: windows-latest
     steps:
-    - name:
-      run: date
+    - run: date
 
   job3:
     #name: Third job
     runs-on: macos-latest
     steps:
-    - name:
-      run: date
+    - run: date
 
   job4:
     needs: [job1, job2, job3]
     #name: Fourth job
     runs-on: ubuntu-latest
     steps:
-    - name:
-      run: date
+    - run: date
