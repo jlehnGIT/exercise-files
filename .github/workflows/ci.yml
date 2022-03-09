@@ -6,19 +6,23 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
+      uses: actions/checkout@v2
       run: date
 
   job2:
     runs-on: windows-latest
     steps:
+      uses: actions/checkout@v2
       run: date /t
 
   job3:
     runs-on: macos-latest
     steps:
+      uses: actions/checkout@v2
       run: date
 
   job4:
     runs-on: ubuntu-latest
     steps:
+      uses: actions/checkout@v2
       needs: [job1, job2, job3]
