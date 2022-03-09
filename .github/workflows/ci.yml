@@ -4,34 +4,30 @@ on: push
 
 jobs:
   job1:
-    name: First job
+    #name: First job
     runs-on: ubuntu-latest
     steps:
-    #- name: 
-      #uses: actions/checkout@v2
+    - name:
       run: date
 
   job2:
-    name: Second job
+    #name: Second job
     runs-on: windows-latest
     steps:
-    #- name:
-      #uses: actions/checkout@v2
+    - name:
       run: date
 
   job3:
-    name: Third job
+    #name: Third job
     runs-on: macos-latest
     steps:
-    #- name:
-      #uses: actions/checkout@v2
+    - name:
       run: date
 
   job4:
     needs: [job1, job2, job3]
-    name: Fourth job
+    #name: Fourth job
     runs-on: ubuntu-latest
     steps:
-    #- name:
-      #uses: actions/checkout@v2
+    - name:
       run: date
