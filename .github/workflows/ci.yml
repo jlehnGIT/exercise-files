@@ -7,7 +7,7 @@ jobs:
     name: First job
     runs-on: ubuntu-latest
     steps:
-    - name: 
+    #- name: 
       #uses: actions/checkout@v2
       run: date
 
@@ -15,7 +15,7 @@ jobs:
     name: Second job
     runs-on: windows-latest
     steps:
-    - name:
+    #- name:
       #uses: actions/checkout@v2
       run: date
 
@@ -23,7 +23,7 @@ jobs:
     name: Third job
     runs-on: macos-latest
     steps:
-    - name:
+    #- name:
       #uses: actions/checkout@v2
       run: date
 
@@ -32,6 +32,6 @@ jobs:
     name: Fourth job
     runs-on: ubuntu-latest
     steps:
-    - name:
+    #- name:
       #uses: actions/checkout@v2
       run: date
